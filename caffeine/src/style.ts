@@ -75,7 +75,64 @@ const OrderSection = styled.div`
 `
 
 const Feedback = styled.div`
+    margin: auto;
+    padding: 82px 153px;
+    max-width: 1366px;
 
+    h2 {
+        font: 700 54px Playfair Display;
+        color: #603809;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    p {
+        font: 400 20px Playfair Display;
+        text-align: center;
+        color: #707070;
+        margin-bottom: 45px;
+    }
+
+    .slider {
+        border: 1px solid #F9C06A6B;
+        background-color: #FFF9F1;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 129px 100px 101px;
+
+            p {
+                font: 600 18px Playfair Display;
+                color: #707070;
+            }
+            
+            h3 {
+                font-family: Playfair Display;
+                font-size: 32px;
+                font-weight: 700;
+                color: #603809;
+            }
+
+            .profession {
+                font-family: Playfair Display;
+                font-size: 20px;
+                font-weight: 400;
+                color: #707070;
+            }
+
+            .left_arrow, .right_arrow {
+
+            }
+        }
+
+        .avatar {
+            width: 112px;
+            height: 112px;
+            border-radius: 16px;
+        }
+    }
 `
 
 
