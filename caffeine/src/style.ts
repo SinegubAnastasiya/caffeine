@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 import coffeeBackground from './assets/coffeeBackground.svg'
+import background from './assets/background.svg'
 import coffeeBean from './assets/coffeeBean.svg'
 import cup from './assets/cup.svg'
 
@@ -22,6 +23,80 @@ const Global = createGlobalStyle`
     border: none;
   }
 `;
+
+const BackgroundPreview = styled.div`
+    background-image: url(${background});
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    padding: 93px;
+    
+    p {
+        font-family: 'Playfair Display';
+        font-size: 22px;
+        font-weight: 500;
+        text-align: left;
+        color: #FFFFFF;
+        max-width: 527px;
+    }
+
+    h1 {
+        font-family: 'Clicker Script';
+        font-size: 220px;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    button {
+        width: 134px;
+        height: 48px;
+        top: 625px;
+        left: 93px;
+        border-radius: 24px;
+        background-color: #F9C06A;
+        font-family: 'Playfair Display';
+        font-size: 16px;
+        font-weight: 700;
+        text-align: left;
+        color: #1E1E1E;
+    }
+`
+
+const SectionInfo = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: auto;
+    gap: 90px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 29px;
+
+        h2 {
+            font: 700 54px 'Playfair Display';
+            color: #603809;
+        }
+
+        p {
+            font: 400 20px 'Playfair Display';
+            color: #707070;
+        }
+
+        .button {
+            background: #f9c06a;
+            padding: 14px 27px;
+            border-radius: 24px;
+            color: #1e1e1e;
+            max-width: 134px;
+            cursor: pointer;
+            font: 700 16px Playfair Display;
+        }
+    }
+`
 
 const OrderSection = styled.div`
     background-image:url(${coffeeBackground});
@@ -80,14 +155,14 @@ const Feedback = styled.div`
     max-width: 1366px;
 
     h2 {
-        font: 700 54px Playfair Display;
+        font: 700 54px 'Playfair Display';
         color: #603809;
         margin-bottom: 16px;
         text-align: center;
     }
 
     p {
-        font: 400 20px Playfair Display;
+        font: 400 20px 'Playfair Display';
         text-align: center;
         color: #707070;
         margin-bottom: 45px;
@@ -104,19 +179,19 @@ const Feedback = styled.div`
             padding: 129px 100px 101px;
 
             p {
-                font: 600 18px Playfair Display;
+                font: 600 18px 'Playfair Display';
                 color: #707070;
             }
             
             h3 {
-                font-family: Playfair Display;
+                font-family: 'Playfair Display';
                 font-size: 32px;
                 font-weight: 700;
                 color: #603809;
             }
 
             .profession {
-                font-family: Playfair Display;
+                font-family: 'Playfair Display';
                 font-size: 20px;
                 font-weight: 400;
                 color: #707070;
@@ -134,6 +209,5 @@ const Feedback = styled.div`
         }
     }
 `
-
 
 export {Global, BackgroundPreview, SectionInfo, Catalog, SectionDifferent, OrderSection, Feedback}
